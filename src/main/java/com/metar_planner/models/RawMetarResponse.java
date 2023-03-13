@@ -1,16 +1,14 @@
-package MetarPlanner.api.models;
+package com.metar_planner.models;
 
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import MetarPlanner.MetarController;
+import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 
 
@@ -19,8 +17,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RawMetarResponse{
-	private static final Logger log = LoggerFactory.getLogger(MetarController.class);
-
 	public String request_index;
 	public String data_source;
 	public String request;

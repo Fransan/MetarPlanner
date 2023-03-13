@@ -1,4 +1,4 @@
-package MetarPlanner.api.models;
+package com.metar_planner.models;
 
 import java.util.Objects;
 
